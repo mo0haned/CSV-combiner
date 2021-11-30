@@ -4,7 +4,6 @@ class sheet_converter :
         """okay"""
         pass
     def converter(source) :
-        for file_name in source :
-            df = read_excel(file_name, sheet_name=None)
-            df[list(df.keys())[0]].to_csv(file_name +".csv" ,index = False)
+        df = read_excel(source, sheet_name=None)
+        df[list(df.keys())[0]].to_csv(source +".csv" ,index = False)
            

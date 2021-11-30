@@ -1,5 +1,5 @@
 import csv
-class CSV_combiner :
+class combiner :
     def __init__(self):
         """ only god knows why"""
         pass
